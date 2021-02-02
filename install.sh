@@ -59,6 +59,7 @@ echo -e "y\n" | sudo $packtool $packArgInstall postman-bin
 echo -e "y\n" | sudo $packtool $packArgInstall powerline-fonts
 echo -e "y\n" | sudo $packtool $packArgInstall screenfetch
 echo -e "y\n" | sudo $packtool $packArgInstall terminator
+#install terminator (config files deleted)
 echo -e "y\n" | sudo $packtool $packArgInstall tlp
 echo -e "y\n" | sudo $packtool $packArgInstall tmux
 echo -e "y\n" | sudo $packtool $packArgInstall tree
@@ -101,6 +102,10 @@ echo "############"
 echo "##############"
 echo "### CONFIG ###"
 echo "##############"
+
+#UTF-8 BE 
+sudo locale-gen be_BE.UTF-8
+sudo dpkg --configure -a
 
 cp files/{.conkyrc,.eslintrc,.prettierrc,.zshrc,.tmux.conf} $HOME/
 
