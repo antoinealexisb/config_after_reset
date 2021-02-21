@@ -36,7 +36,7 @@ echo "##############################"
 echo "### INSTALLING NECESSARIES ###"
 echo "##############################"
 
-echo -e "y\n" | sudo $packtool $packArgInstallapm
+echo -e "y\n" | sudo $packtool $packArgInstall apm
 echo -e "y\n" | sudo $packtool $packArgInstall atom
 echo -e "y\n" | sudo $packtool $packArgInstall cmake
 echo -e "y\n" | sudo $packtool $packArgInstall colorgrab
